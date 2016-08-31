@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 float percentage = Float.parseFloat(percentageTxt.getText().toString());
-                float dec = percentage / 75;
+                float dec = percentage / 100;
                 float total = dec * Float.parseFloat(numberTxt.getText().toString());
                 totalTextView.setText(Float.toString(total));
             }
